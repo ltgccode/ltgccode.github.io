@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [LTGC](https://ltgccode.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find LTGC useful for your work please cite:
 ```
 @article{zhao2024ltgc,
   title={LTGC: Long-tail Recognition via Leveraging LLMs-driven Generated Content},
