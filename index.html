@@ -196,31 +196,11 @@
           <p>
             LTGC first employs LMMs to analyze the existing tail data to obtain the existing tail-class descriptions list. Then it inputs the list into LLMs to analyze the absent features of the tail classes and employs the T2I model to generate diverse images. Moreover, our designed self-reflection and iterative evaluation modules ensure the diversity and quality of the tail data. Finally, LTGC employs the BalanceMix module to fine-tune the CLIP’s visual encoder with the extended and original data.
           </p>
-          <img id="teaser" src="./static/images/fig1.png" style="width: 400px; height: auto;" alt="Description of the image">
+          <img id="teaser" src="./static/images/fig_framework_v7_new.png" style="width: 1100px; height: auto;" alt="Description of the image">
           </video>
         </div>
       </div>
       <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
 
 
     <!-- Concurrent Work. -->
