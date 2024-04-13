@@ -89,7 +89,7 @@
                   </p>
             </div>
 
-            <div class="container" style="max-width: 468px;">
+            <div class="container" style="max-width: 768px;">
                 <!-- PDF Link. -->
                 <div class="col-xs-12 col-sm-3 col-md-3 text-center">
                 <a href="https://arxiv.org/abs/2403.05854" target="_blank" class="link-block btn btn-outline-dark text-center">
@@ -239,123 +239,6 @@ poses and plain backgrounds. The four images on the right are from the proposed 
                     </div>
         </div>
         
-
-        <hr class="divider"/>
-        <div class="container" style="max-width: 1024px;">
-            <h2>Flexible NFEs</h2>
-            <p>The NFEs for TCD sampling can be varied at will (compared with Turbo series), without adversely affecting the quality of the results (compared with LCMs).<p>
-            <p>
-            We compare the performance of TCD and LCM at increasing NFEs. Due to accumulated errors in multistep sampling, LCM experiences a loss of image detail, leading to a degradation in performance, whereas TCD addresses this issue. 
-            </p>
-            <div class="container-fluid">
-                <div class="row no-gutters align-items-center"> <!-- align-items-center will vertically align the contents of this row -->
-                  <div class="col-1 text-center"> <!-- text-center will horizontally center the text -->
-                    LCM
-                  </div>
-                  <div class="col-11">
-                    <div class="row no-gutters">
-                      <div class="col" style="flex: 0 0 20%; max-width: 20%;">NFE 4</div>
-                      <div class="col" style="flex: 0 0 20%; max-width: 20%;">NFE 12</div>
-                      <div class="col" style="flex: 0 0 20%; max-width: 20%;">NFE 20</div>
-                      <div class="col" style="flex: 0 0 20%; max-width: 20%;">NFE 30</div>
-                      <div class="col" style="flex: 0 0 20%; max-width: 20%;">NFE 50</div>
-                    </div>
-                    <img src="img/nfes/lcm-0-1337.png" alt="First Image Grid" class="img-fluid">
-                  </div>
-                </div>
-              
-                <div class="row no-gutters align-items-center">
-                  <div class="col-1 text-center">
-                    TCD
-                  </div>
-                  <div class="col-11">
-                    <img src="img/nfes/tcd-0-1337.png" alt="Second Image Grid" class="img-fluid">
-                  </div>
-                </div>
-              
-                <div class="row no-gutters align-items-center">
-                  <div class="col-1 text-center">
-                    LCM
-                  </div>
-                  <div class="col-11">
-                    <img src="img/nfes/lcm-6-1337.png" alt="Third Image Grid" class="img-fluid">
-                  </div>
-                </div>
-              
-                <div class="row no-gutters align-items-center">
-                  <div class="col-1 text-center">
-                    TCD
-                  </div>
-                  <div class="col-11">
-                    <img src="img/nfes/tcd-6-1337.png" alt="Fourth Image Grid" class="img-fluid">
-                    <h6 class="caption">Comparision with LCM at increasing NFEs</h6>
-                  </div>
-                 
-                </div>
-                
-              </div>
-            </div>
-        <hr class="divider" />
-        <div class="container" style="max-width: 1024px;">
-            <h2>Freely Change the Detailing</h2>
-            <p>
-              During inference, the level of detail in the image can be simply modified by adjusing one hyper-parameter gamma. This option does not require the introduction of any additional parameters.
-            </p>
-
-            <div class="container-fluid">
-                <div class="row"> 
-                    <div class="col-2">LCM</div>
-                    <div class="col-10">TCD (increasing 𝛾)</div>
-                </div>
-                <div class="row  align-items-stretch">
-                  <div class="col-2">
-                        <img src="img/gammas/3-2-lcm.png" alt="First Image Grid" class="img-fluid">
-                  </div>
-                  <div class="col-10">
-                    <img src="img/gammas/3-2.png" alt="First Image Grid" class="img-fluid">
-                  </div>
-                </div>
-
-                <div class="row  align-items-stretch">
-                    <div class="col-2">
-                          <img src="img/gammas/0-0-lcm.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                    <div class="col-10">
-                      <img src="img/gammas/0-0.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                  </div>
-
-                <div class="row  align-items-stretch">
-                    <div class="col-2">
-                        <img src="img/gammas/4-0-lcm.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                    <div class="col-10">
-                    <img src="img/gammas/4-0.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row  align-items-stretch">
-                    <div class="col-2">
-                        <img src="img/gammas/5-3-lcm.png" alt="First Image Grid" class="img-fluid">
-                         
-                      </div>
-                    <div class="col-10">
-                    <img src="img/gammas/5-3.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                    <h6 class="caption">Comparision with LCM at different 𝛾 </h3>
-                </div>
-            </div>
-        </div>
-
-        <hr class="divider" />
-        <div class="container" style="max-width: 1024px;">
-            <h2>Versatility</h2>
-            <p>
-                TCD can be adapted to various SDXL-based expansions and plugins in the community, for instance, LoRA, ControlNet, IP Adapter, and other base models, e.g. Animagine XL.
-            </p>
-        <img src="img/versatility.png" alt="overview" style="width: 100%; height: auto;">
-        </div>
-        </div>
-        </div>
 
         <hr class="divider" />
         <div class="container" style="max-width: 1024px;">
