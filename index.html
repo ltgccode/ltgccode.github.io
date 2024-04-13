@@ -227,57 +227,16 @@ Finally, LTGC employs the BalanceMix module to fine-tune the CLIP’s visual enc
 
       
         <hr class="divider" />
-        <div class="container" style="max-width: 1024px;">
-            <!-- <h3>Comparision with SDXL</h3> -->
-            <h2>Better than Teacher w/o Additional Supervision</h2>
-            <p>
-              TCD maintains superior generative quality at both low NFEs and high NFEs, even exceeding the performance of DPM-Solver++(2S) with origin SDXL. It is worth noting that there is no additional discriminator or LPIPS supervision included during training.
-            </p>
-            <p>
-             We demonstrate some examples at 20 NFEs below.
-            </p>
-
-            <div class="container-fluid">
-                <div class="row"> 
-                    <div class="col-6">SDXL w/ DPM-Solver</div>
-                    <div class="col-6">TCD</div>
-                </div>
-                <div class="row  align-items-stretch">
-                  <div class="col-6">
-                        <img src="img/sdxl/raw/00000.png" alt="First Image Grid" class="img-fluid">
-                  </div>
-                  <div class="col-6">
-                    <img src="img/sdxl/tcd/00000.png" alt="First Image Grid" class="img-fluid">
-                  </div>
-                </div>
-
-                <div class="row  align-items-stretch">
-                    <div class="col-6">
-                          <img src="img/sdxl/raw/00003.png" alt="First Image Grid" class="img-fluid">
+        <div class="container" style="max-width: 865px;">
+            <!-- <h3>LTGC</h3> -->
+            <h2>The visualization of generated images: The template ”A photo of the class [y]” and LTGC</h2>
+            <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/WeChatb2f45cce62615aeee15d93b57cd59bd2.png" alt="overview" style="width: 100%; height: auto;">
+                            <h6 class="caption">Each row represents a different
+class. The four images on the left are generated using the simple template ”A photo of the class [y],” which results in images with uniform
+poses and plain backgrounds. The four images on the right are from the proposed LTGC and demonstrate the diversity of classes.
                     </div>
-                    <div class="col-6">
-                      <img src="img/sdxl/tcd/00003.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                  </div>
-
-                  <div class="row  align-items-stretch">
-                    <div class="col-6">
-                          <img src="img/sdxl/raw/00086.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                    <div class="col-6">
-                      <img src="img/sdxl/tcd/00086.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="row  align-items-stretch">
-                    <div class="col-6">
-                          <img src="img/sdxl/raw/00104.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                    <div class="col-6">
-                      <img src="img/sdxl/tcd/00104.png" alt="First Image Grid" class="img-fluid">
-                    </div>
-                  </div>
-                  <h6 class="caption">Comparision with SDXL</h6>
-                </div>
         </div>
         
 
