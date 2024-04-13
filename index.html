@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Trajectory Consistency Distillation</title>
+    <title>LTGC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/Highlight-Clean.css">
@@ -117,8 +117,6 @@
                 <div class="flipper">
                     <img src="img/step4/separate_prompt3_seed0.png" class="front" alt="Front 1">
                     <img src="img/step4/separate_prompt3_seed1.png" class="back" alt="Back 1">
-		    <img src="img/step4/separate_prompt34_seed1.png" class="front" alt="Front 1">
-		    <img src="img/step4/separate_prompt4_seed2.png" class="back" alt="Back 1">
                 </div>
             </div>
             <div class="image-container">
@@ -187,6 +185,18 @@
             <img src="img/step4/separate_prompt74_seed0.png" class="back" alt="Back 1">
           </div>
           </div>
+	  <div class="image-container">
+          <div class="flipper">
+            <img src="img/step4/separate_prompt72_seed3.png" class="front" alt="Front 1">
+            <img src="img/step4/separate_prompt74_seed0.png" class="back" alt="Back 1">
+          </div>
+          </div>
+	  <div class="image-container">
+          <div class="flipper">
+            <img src="img/step4/separate_prompt72_seed3.png" class="front" alt="Front 1">
+            <img src="img/step4/separate_prompt74_seed0.png" class="back" alt="Back 1">
+          </div>
+          </div>
         </div>
 
         <div class="highlight-clean" style="padding-bottom: 10px;">
@@ -203,7 +213,7 @@
                     Long-tail recognition is challenging because it requires the model to learn good representations from tail categories and address imbalances across all categories. In this paper, we propose a novel generative and fine-tuning framework, LTGC, to handle long-tail recognition via leveraging generated content. Firstly, inspired by the rich implicit knowledge in large-scale models (e.g., large language models, LLMs), LTGC leverages the power of these models to parse and reason over the original tail data to produce diverse tail-class content. We then propose several novel designs for LTGC to ensure the quality of the generated data and to efficiently fine-tune the model using both the generated and original data. The visualization demonstrates the effectiveness of the generation module in LTGC, which produces accurate and diverse tail data. Additionally, the experimental results demonstrate that our LTGC outperforms existing state-of-the-art methods on popular long-tailed benchmarks.
                     <div class="row">
                         <div class="col-md-12">
-                            <img src="img/WeChat2247931bc90fc9d532c668e09d6d87cb" alt="overview" style="width: 100%; height: auto;">
+                            <img src="img/WeChat2247931bc90fc9d532c668e09d6d87cb.png" alt="overview" style="width: 100%; height: auto;">
                             <h6 class="caption">Overall framework of LTGC. LTGC first employs LMMs to analyze the existing tail data to obtain the existing tail-class
 descriptions list. Then it inputs the list into LLMs to analyze the absent features of the tail classes and employs the T2I model to generate
 diverse images. Moreover, our designed self-reflection and iterative evaluation modules ensure the diversity and quality of the tail data.
